@@ -1,1 +1,64 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Angel Andre Guzman Gonzalez">
+	<title>Listas & Formularios</title>
+</head>
+<body>
+	<h1>Listas y formularios</h1>
+	<h2>Listas</h2>
+	<!--Listas no ordenadas-->
+	<ul>
+		<li>Huevo</li>
+		<li>Mas huevo</li>
+		<li>Un poco mas de huevos</li>
+		<li>Huevos!</li>
+	</ul>
+	<!--Listas ordenadas-->
+	<ol type="I" reversed>
+		<li>Primero comprar huevo</li>		
+		<li>Despues comprar huevo</li>
+		<li>Seguido comprar huevo</li>
+		<li>Por ultimo comprar huevo</li>
+	</ol>
+	<!--Listas de definicion-->
+	<dl>
+		<dt>Mejor Comida</dt>
+		<dd>Huevo</dd>
+		<dt>Huevo</dt>
+		<dd>Cuerpo redondeado, de tamaño y dureza variables, que producen las hembras de las aves o de otras especies animales, y que contiene el germen del embrión y las sustancias destinadas a su nutrición durante la incubación.</dd>
+	</dl>
+	<!--Listas anidadas-->
+	<ul>
+		<li>
+			Huevo
+			<ol>
+				<li>Partir el huevo</li>
+				<li>Verter el huevo</li>
+				<li>Revolver Huevo</li>
+			</ol>
+		</li>
+		<li>
+			Mango
+			<ol>
+				<li>Lavar mango</li>
+				<li>Pelar mango</li>
+				<li>Comer mango</li>
+			</ol>
+		</li>
+	</ul>
+	<hr>
+	<h2>Formularios en HTML</h2>
+	<form action="/inicio_sesion" method="post">
+		<label for="comida">Comida Favorita</label>
+		<input type="text" id="comida" name="comida" placeholder="Tu comida favorita">
+		<br>
+		<label for="nacimiento">Fecha de Nacimiento</label>
+		<input type="date" id="nacimiento" name="nacimiento" placeholder="Cuando naciste">
+		<br>
+		<button type="submit">Enviar</button>
+	</form>
+</body>
+</html>
