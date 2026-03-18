@@ -68,9 +68,76 @@
 		<br>
 		<label for="comidacomentario">Por Que Fue Tu Comida Favorito</label>
 		<br>
-		<textarea id="comidacomentario" name="comidacomentario" placeholder="Explicanos" rows="3" cols="115"></textarea>
+		<textarea id="comidacomentario" name="comidacomentario" placeholder="Dejanos tu comentario" rows="3" cols="115"></textarea>
 		<br>
 		<button type="submit">Enviar</button>
+	</form>
+	<hr>
+	<p>Cuales son tus huevos preferidos?</p>
+	<form action="/seleccion_comida" method="post">
+		<label for="comida_seleccion">Selecciona tus huevos preferidos:</label>
+		<select name="comida_seleccion" id="comida_seleccion">
+			<option value="" disabled selected hidden>Escoge una opcion</option>
+			<option value="huevos_revueltos">Huevos revueltos</option>			
+			<option value="huevos_estrellados">Huevos estrellados</option>
+			<option value="huevos_hervidos">Huevos hervidos</option>
+			<option value="huevos_mexicana">Huevos a la mexicana</option>
+			<option value="huevos_pochados">Huevos pochados</option>
+		</select>
+		<br>
+		<p>Cuales son los peores huevos?</p>
+		<label for="comida_seleccion_peor">Selecciona los peores huevos:</label>
+		<select name="comida_seleccion_peor" id="comida_seleccion_peor">
+			<option value="" disabled selected hidden>Escoge una opcion</option>
+			<option value="huevos_revueltos">Huevos revueltos</option>			
+			<option value="huevos_estrellados">Huevos estrellados</option>
+			<option value="huevos_hervidos">Huevos hervidos</option>
+			<option value="huevos_mexicana">Huevos a la mexicana</option>
+			<option value="huevos_pochados">Huevos pochados</option>
+		</select>
+		<br>
+		<button type="submit">Responder formulario de huevos</button>
+	</form>
+	<p>Examen de huevos</p>
+	<form action="/examen_huevos" method="post">
+		<fieldset>
+			<legend>Informacion personal:</legend>
+			<label for="name">Nombre(s)</label>
+			<input type="text" name="name" id="name" required>
+			<label for="surname">Apellidos</label>
+			<input type="text" name="surname" id="surname" required>
+		</fieldset>
+		<fieldset>
+			<legend>Preferencias de huevos:</legend>
+			<label for="como_huevos">Como te gustan los huevos?</label>
+			<select name="como_huevos" id="como_huevos">
+				<option value="" disabled selected hidden>Escoge una opcion</option>
+				<option value="huevos_revueltos">Huevos revueltos</option>			
+				<option value="huevos_estrellados">Huevos estrellados</option>
+				<option value="huevos_hervidos">Huevos hervidos</option>
+				<option value="huevos_mexicana">Huevos a la mexicana</option>
+				<option value="huevos_pochados">Huevos pochados</option>
+			</select>
+			<label for="primer_huevo">Cuando comiste tu primer huevo?</label>
+			<input type="date" id="primer_huevo" name="primer_huevo" placeholder="Cuando comiste tu primer huevo?">
+			<label for="ultimo_huevo">Hace cuantos dias comiste tu ultimo huevo?</label>
+			<input type="number" name="ultimo_huevo" id="ultimo_huevo" min="0">
+			<label for="huevos_comidos">Numero de huevos comidos en tu vida</label>
+			<input type="text" name="huevos_comidos" id="huevos_comidos" minlength="5" maxlength="10" pattern="[0-9]" inputmode="numeric">
+			<label for="email">Email huevil</label>
+			<input type="email" name="email" id="email">
+		</fieldset>
+		<fieldset>
+			<legend>Ubicacion para envio de huevos</legend>
+			<label for="pais">Pais</label>
+			<input type="text" name="pais" id="pais">
+			<label for="estado">Estado</label>
+			<input type="text" name="estado" id="estado">
+			<label for="direccion">Direccion</label>
+			<input type="text" name="direccion" id="direccions">
+		</fieldset>
+		<br>
+		<button type="submit">Responder formulario de huevos</button>
 	</form>
 </body>
 </html>
