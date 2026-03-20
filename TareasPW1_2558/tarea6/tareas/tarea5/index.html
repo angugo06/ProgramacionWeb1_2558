@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Angel Andre Guzman Gonzalez">
+	<title>Listas & Formularios</title>
+</head>
+<body>
+	<h1>Listas y formularios</h1>
+	<h2>Listas</h2>
+	<!--Listas no ordenadas-->
+	<ul>
+		<li>Huevo</li>
+		<li>Mas huevo</li>
+		<li>Un poco mas de huevos</li>
+		<li>Huevos!</li>
+	</ul>
+	<!--Listas ordenadas-->
+	<ol type="I" reversed>
+		<li>Primero comprar huevo</li>		
+		<li>Despues comprar huevo</li>
+		<li>Seguido comprar huevo</li>
+		<li>Por ultimo comprar huevo</li>
+	</ol>
+	<!--Listas de definicion-->
+	<dl>
+		<dt>Mejor Comida</dt>
+		<dd>Huevo</dd>
+		<dt>Huevo</dt>
+		<dd>Cuerpo redondeado, de tamaño y dureza variables, que producen las hembras de las aves o de otras especies animales, y que contiene el germen del embrión y las sustancias destinadas a su nutrición durante la incubación.</dd>
+	</dl>
+	<!--Listas anidadas-->
+	<ul>
+		<li>
+			Huevo
+			<ol>
+				<li>Partir el huevo</li>
+				<li>Verter el huevo</li>
+				<li>Revolver Huevo</li>
+			</ol>
+		</li>
+		<li>
+			Mango
+			<ol>
+				<li>Lavar mango</li>
+				<li>Pelar mango</li>
+				<li>Comer mango</li>
+			</ol>
+		</li>
+	</ul>
+	<hr>
+	<h2>Formularios en HTML</h2>
+	<form action="/inicio_sesion" method="post">
+		<label for="comida">Comida Favorita</label>
+		<input type="text" id="comida" name="comida" placeholder="Tu comida favorita">
+		<br>
+		<label for="nacimiento">Fecha de Nacimiento</label>
+		<input type="date" id="nacimiento" name="nacimiento" placeholder="Cuando naciste">
+		<br>
+		<button type="submit">Enviar</button>
+	</form>
+	<br>
+	<p>Danos tu retroalimentacion</p>
+	<form action="validacion.php" method="post">
+		<label for="comida">Comida Favorita</label>
+		<input type="text" id="comida" name="comida" placeholder="Tu comida favorita">
+		<br>
+		<label for="comidacomentario">Por Que Fue Tu Comida Favorito</label>
+		<br>
+		<textarea id="comidacomentario" name="comidacomentario" placeholder="Dejanos tu comentario" rows="3" cols="115"></textarea>
+		<br>
+		<button type="submit">Enviar</button>
+	</form>
+	<hr>
+	<p>Cuales son tus huevos preferidos?</p>
+	<form action="/seleccion_comida" method="post">
+		<label for="comida_seleccion">Selecciona tus huevos preferidos:</label>
+		<select name="comida_seleccion" id="comida_seleccion">
+			<option value="" disabled selected hidden>Escoge una opcion</option>
+			<option value="huevos_revueltos">Huevos revueltos</option>			
+			<option value="huevos_estrellados">Huevos estrellados</option>
+			<option value="huevos_hervidos">Huevos hervidos</option>
+			<option value="huevos_mexicana">Huevos a la mexicana</option>
+			<option value="huevos_pochados">Huevos pochados</option>
+		</select>
+		<br>
+		<p>Cuales son los peores huevos?</p>
+		<label for="comida_seleccion_peor">Selecciona los peores huevos:</label>
+		<select name="comida_seleccion_peor" id="comida_seleccion_peor">
+			<option value="" disabled selected hidden>Escoge una opcion</option>
+			<option value="huevos_revueltos">Huevos revueltos</option>			
+			<option value="huevos_estrellados">Huevos estrellados</option>
+			<option value="huevos_hervidos">Huevos hervidos</option>
+			<option value="huevos_mexicana">Huevos a la mexicana</option>
+			<option value="huevos_pochados">Huevos pochados</option>
+		</select>
+		<br>
+		<button type="submit">Responder formulario de huevos</button>
+	</form>
+	<p>Examen de huevos</p>
+	<form action="/examen_huevos" method="post">
+		<fieldset>
+			<legend>Informacion personal:</legend>
+			<label for="name">Nombre(s)</label>
+			<input type="text" name="name" id="name" required>
+			<label for="surname">Apellidos</label>
+			<input type="text" name="surname" id="surname" required>
+		</fieldset>
+		<fieldset>
+			<legend>Preferencias de huevos:</legend>
+			<label for="como_huevos">Como te gustan los huevos?</label>
+			<select name="como_huevos" id="como_huevos">
+				<option value="" disabled selected hidden>Escoge una opcion</option>
+				<option value="huevos_revueltos">Huevos revueltos</option>			
+				<option value="huevos_estrellados">Huevos estrellados</option>
+				<option value="huevos_hervidos">Huevos hervidos</option>
+				<option value="huevos_mexicana">Huevos a la mexicana</option>
+				<option value="huevos_pochados">Huevos pochados</option>
+			</select>
+			<label for="primer_huevo">Cuando comiste tu primer huevo?</label>
+			<input type="date" id="primer_huevo" name="primer_huevo" placeholder="Cuando comiste tu primer huevo?">
+			<label for="ultimo_huevo">Hace cuantos dias comiste tu ultimo huevo?</label>
+			<input type="number" name="ultimo_huevo" id="ultimo_huevo" min="0">
+			<label for="huevos_comidos">Numero de huevos comidos en tu vida</label>
+			<input type="text" name="huevos_comidos" id="huevos_comidos" minlength="5" maxlength="10" pattern="[0-9]" inputmode="numeric">
+			<label for="email">Email huevil</label>
+			<input type="email" name="email" id="email">
+		</fieldset>
+		<fieldset>
+			<legend>Ubicacion para envio de huevos</legend>
+			<label for="pais">Pais</label>
+			<input type="text" name="pais" id="pais">
+			<label for="estado">Estado</label>
+			<input type="text" name="estado" id="estado">
+			<label for="direccion">Direccion</label>
+			<input type="text" name="direccion" id="direccions">
+		</fieldset>
+		<br>
+		<button type="submit">Responder formulario de huevos</button>
+	</form>
+</body>
+</html>
