@@ -1,0 +1,16 @@
+/*Selector de clases*/
+
+.aaa{
+    background-color: aqua;
+}
+/*Selector de elementos*/
+h2{
+    color: blue;
+}
+.h2red{
+    color:red
+}
+/*Selector de identificadores*/
+#bg-h1{
+    background-color: blueviolet;
+}
