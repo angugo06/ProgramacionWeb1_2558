@@ -1,0 +1,24 @@
+.fondohombre{
+    width: 1000px;
+    height: 600px;
+    background: url(https://vanguardia.com.mx/binrepository/1152x756/0c108/1152d648/down-right/11604/JSMN/this-man-este-hombre-suenos_1-8493934_20240314152036.jpg) left / contain no-repeat fixed rebeccapurple;
+    border: 30px dotted greenyellow;
+    color: palevioletred;
+    text-align: center;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-evenly; 
+}
+
+.fondonino{
+    background-image: linear-gradient(to top, rgba(255, 192, 203, 0.548), rgba(128, 0, 128, 0.486)), url(../media/imagen1.jpg);
+    width: 1000px;
+    height: 1000px;
+    color: yellow;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-evenly; 
+    background-repeat:no-repeat;
+}
