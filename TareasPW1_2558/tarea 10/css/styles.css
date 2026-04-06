@@ -1,0 +1,31 @@
+#encabezado{
+    color: aqua;
+    height: 100%;
+    background-color: black;
+    padding: 10px 10px 10px 10px;
+    border: 10px seagreen dotted;
+    border-top: ridge 10px gold;
+    border-right: 100px groove;
+    border-radius: 7%;
+    box-shadow: 50px 60px 1000px red;
+    box-sizing: border-box;
+}
+.introduccion{
+    color: brown;
+    height: 150px;
+    width: 500px;
+    padding: 50px 300px;
+    text-align: center;
+    border: 10px green ridge;
+    border-radius: 15%;
+}
+
+.texto-fuente{
+    
+}
+.texto-propiedades{
+
+}
+.fuentes-propiedades{
+
+}
