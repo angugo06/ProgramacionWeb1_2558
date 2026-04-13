@@ -47,6 +47,8 @@ body{
     border-spacing: 30px;
     border: 3cm goldenrod double;
     border-radius: 30px;
+    font-size: 10em;
+    font-weight: 100;
 }
 .texto-propiedades p{
     text-align: justify;
@@ -58,7 +60,9 @@ body{
 .fuentes-propiedades{
     text-align: right;
     word-spacing: 1cm;
-    font-size: 0.1em;
+    font-size: 10em;
+    font-weight: 900;
+    font-style: oblique;
 }
 
 #principal{
