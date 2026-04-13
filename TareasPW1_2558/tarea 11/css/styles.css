@@ -1,0 +1,45 @@
+html{
+    font-size: 10px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+/*Orden destilos para enlaces LVFHA*/
+a:link{
+    color: black;
+}a:visited{
+    color: aqua;
+}a:focus{
+    color: slategray;
+}
+a:hover{
+    color: green;
+    font-weight: 900;
+    border: 10px;
+
+}
+a:active{
+    color: goldenrod;
+    border: 10rem dotted pink;
+    background-color: white;    background-image: radial-gradient(circle at center, red, blue, green);
+
+}
+.navegacion{
+    background-image: radial-gradient(circle at center, red, blue, green);
+    padding: 1rem;
+    box-shadow: 1 rem 1 rem 1 rem, 
+}
+.estados-enlaces ul{
+    text-align: center;
+    list-style: upper-roman;
+    border: 1cm;
+    background-color: black;
+    padding: 0;
+    list-style-position: inside;
+    color: yellow;
+    list-style-image: url("../imagen.png");
+}
+
