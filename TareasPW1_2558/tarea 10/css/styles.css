@@ -18,6 +18,7 @@ body{
     border-radius: 7%;
     box-shadow: 50px 60px 1000px red;
     box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
 }
 #encabezado h1{
     text-align: center;
