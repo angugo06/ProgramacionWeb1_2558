@@ -1,0 +1,77 @@
+html{
+    font-size: 10px;
+    color: black;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: linear-gradient(pink, yellow);
+    color: black;
+}
+
+.contenedor-flotante1 img{
+    size: 100px;
+    image-resolution: 100;
+    height: 25%;
+    filter: invert(1);
+    width: 25%;
+    float: left;
+}
+
+.contenedor-flotante2 img{
+    size: 100px;
+    filter: contrast(1000000);
+    height: 25%;
+    width: 25%;
+    float:inline-end;
+}
+
+.contenedor-flotante2 p{
+    text-align: center;
+}
+
+h1{
+    font-size: 5em;
+    text-shadow: 20px 20px whitesmoke;
+}
+p{
+    font-size: 3em;
+    border: 5px dotted greenyellow;
+    border: 4%;
+}
+
+/*
+Moviles 480px>
+Tablets 480-960px
+Pc 960-1280px
+*/
+
+@media screen and (max-width: 700px){
+    h1{
+    font-size: 3em;
+    text-shadow: 20px 20px whitesmoke;
+    }
+.contenedor-flotante1 p{
+    font-size: 1em;
+}
+
+.contenedor-flotante2 p{
+    font-size: 1em;
+}
+}
+
+@media screen and (max-width: 400px){
+    h1{
+    font-size: 1em;
+    text-shadow: 4px 4px whitesmoke;
+    }
+.contenedor-flotante1 p{
+    font-size: 0.5em;
+}
+
+.contenedor-flotante2 p{
+    font-size: 0.5em;
+}
+}
