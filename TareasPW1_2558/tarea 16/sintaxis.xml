@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<libro>
+    <titulo>Biblioteca</titulo>
+    <autor>Andre Guzman</autor>
+    <stock>
+        <libro id="1" genero="programacion">
+            <nombre>Programando en XML</nombre>
+            <paginas>180</paginas>
+        </libro>
+        <libro id="2" genero="historia">
+            <nombre>La historia de dieguito</nombre>
+            <paginas>125</paginas>
+        </libro>
+        <libro id="3" genero="literatura">
+            <nombre>Aura</nombre>
+            <paginas>300</paginas>
+        </libro>
+    </stock>
+    <descripcion>Ejemplo básico de sintaxis XML haciendo una biblioteca</descripcion>
+</libro>
