@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<libro>
+    <titulo>Introducción a XML</titulo>
+    <autor>Juan Pérez</autor>
+    <año>2024</año>
+    <capitulos>
+        <capitulo numero="1">
+            <nombre>Introducción</nombre>
+            <paginas>25</paginas>
+        </capitulo>
+        <capitulo numero="2">
+            <nombre>Características</nombre>
+            <paginas>30</paginas>
+        </capitulo>
+    </capitulos>
+    <descripcion>Ejemplo básico de sintaxis XML</descripcion>
+</libro>
